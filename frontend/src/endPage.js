@@ -27,7 +27,7 @@ class EndPage extends React.Component {
                 <div className="row align-items-center mt-3">
                     <div className="col-12 mx-auto text-center">
                         <div className="progress bg-white shadow" style={{"height": "2rem"}}>
-                            <div className="progress-bar bg-pink m-1" role="progressbar" style={{"borderRadius": ".25rem","width": "75%", "aria-valuenow": "75", "aria-valuemin": "0", "aria-valuemax": "100"}}></div>
+                            <div className="progress-bar bg-pink m-1" role="progressbar" style={{"borderRadius": ".25rem","width": "75%", "ariaValuenow": "75", "ariaValuemin": "0", "ariaValuemax": "100"}}></div>
                         </div>
                     </div>
                 </div>
@@ -40,8 +40,8 @@ class EndPage extends React.Component {
         </div>
         <div className="row align-items-center h-33">
             <div className="col-10 mx-auto text-center">
-                <h8><b>Lets take a look at how you look in the <i className="green">Home</i> category...</b></h8><br/>
-                <button type="button" className="btn btn-lg btn-block mt-3" style={{'background-color': '#48B07A', 'border-color': '#48B07A', 'color': '#fff', 'border-radius': '0'}}>Continue</button>
+                <b>Lets take a look at how you look in the <i className="green">Home</i> category...</b><br/>
+                <button type="button" className="btn btn-lg btn-block mt-3" style={{'backgroundColor': '#48B07A', 'borderColor': '#48B07A', 'color': '#fff', 'borderRadius': '0'}}>Continue</button>
             </div>
         </div>
     </div>

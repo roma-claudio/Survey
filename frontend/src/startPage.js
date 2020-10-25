@@ -13,7 +13,7 @@ class StartPage extends React.Component {
       <div className="row align-items-center mt-5">
         <div className="col-10 mx-auto text-center">
         <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 270 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0)">
+          <g clipPath="url(#clip0)">
           <path d="M15.216 148.03C14.8897 148.036 14.5741 148.147 14.3155 148.347C13.548 146.319 12.3599 145.015 11.0252 145.015C9.69043 145.015 8.50235 146.319 7.73489 148.347C7.47629 148.147 7.16072 148.036 6.83442 148.03C5.31803 148.03 4.08875 150.594 4.08875 153.757H17.9616C17.9616 150.594 16.7323 148.03 15.216 148.03Z" fill="#48B07A"/>
           <path d="M70.3375 153.437H0V154.077H70.3375V153.437Z" fill="#3F3D56"/>
           <path d="M265.234 134.595C264.907 134.602 264.592 134.713 264.333 134.912C263.566 132.884 262.378 131.581 261.043 131.581C259.708 131.581 258.52 132.884 257.753 134.912C257.494 134.713 257.179 134.602 256.852 134.595C255.336 134.595 254.107 137.159 254.107 140.322H267.979C267.979 137.159 266.75 134.595 265.234 134.595Z" fill="#48B07A"/>
@@ -71,7 +71,7 @@ class StartPage extends React.Component {
       </div>
       <div className="row align-items-center fixed-bottom h-25">
         <div className="col-10 mx-auto mb-4 text-center">
-          <button onClick={this.redirect} type="button" className="btn btn-block" style={{'background-color': '#48B07A', 'border-color': '#48B07A', 'border-radius': '0'}}><small className="white">Take the survey</small></button>
+          <button onClick={this.redirect} type="button" className="btn btn-block" style={{'backgroundColor': '#48B07A', 'borderColor': '#48B07A', 'borderRadius': '0'}}><small className="white">Take the survey</small></button>
         </div>
       </div>
     </div>

@@ -11,7 +11,6 @@ var con = mysql.createConnection({
 
   con.connect(function(err) {
     if (err) throw err;
-    console.log("Connected to the database");
 
     //Create Database
     con.query("CREATE DATABASE IF NOT EXISTS survey_db", function (err, result) {
@@ -31,7 +30,6 @@ var con = mysql.createConnection({
         //Insert Questions
         con.query("INSERT INTO questions (pk_question, question, fk_answer) VALUES ('1', 'How often do you eat meat and dairy?','1'),('2','How big are your portions sizes?','2'),('3','How much food ends up wasted in your household?','3'),('4','How often do you eat avocados, asparagus, kiwi fruit or pineapples?','1')", function (err, result) {
             if (err) throw err;
-            
         });
 
       });
@@ -43,7 +41,6 @@ var con = mysql.createConnection({
         //Insert Answers
         con.query("INSERT INTO answers (pk_answer, answer) VALUES ('1','Daily'),('1','1 or 2 times'),('1','3+ times per week'),('1','Not at all'),('2','Smaller than average'),('2','Average'),('2','Larger than average'),('2','I''m not sure'),('3','None'),('3','1-5 plates per week'),('3','6-10 plates per week'),('3','More than 10 plates per week')", function (err, result) {
             if (err) throw err;
-
         });
 
       });

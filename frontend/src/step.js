@@ -17,7 +17,6 @@ class Step extends React.Component {
     
     fetchData = () => {
         fetch("http://localhost:8080/?id="+this.state.step).then( response => response.json() ).then( (response) => {
-            console.log(response);
             this.setState({
                 question: response.questions,
                 answer: response.answers
@@ -33,7 +32,6 @@ class Step extends React.Component {
 
         var nextStep = this.state.step + 1;
         fetch("http://localhost:8080/?id="+nextStep).then( response => response.json() ).then( (response) => {
-            console.log(response);
             this.setState({
                 step: nextStep,
                 highlightedCard: null,
@@ -99,7 +97,7 @@ class Step extends React.Component {
                                     </div>
                                 </div>
                             </div> 
-                            <div class="w-100 mt-3"></div>
+                            <div className="w-100 mt-3"></div>
                             <div className="col mx-auto text-center d-flex h-50">
                                 <div className={this.state.highlightedCard === 1 ? "card w-100 bg-pink white shadow" : "card w-100 bg-white shadow"} onClick={ () => {this.toggleColor(1)}}>    
                                     <div className="my-auto p-1">
@@ -117,7 +115,7 @@ class Step extends React.Component {
                         </div>
                         <div className="row align-items-center fixed-bottom h-25">
                             <div className="col-11 mx-auto mb-4 text-center">
-                                <button onClick={this.redirect} type="button" className="btn btn-block" style={{'background-color': '#48B07A', 'border-color': '#48B07A', 'border-radius': '0'}}><small className="white">Next question</small></button>
+                                <button onClick={this.redirect} type="button" className="btn btn-block" style={{'backgroundColor': '#48B07A', 'borderColor': '#48B07A', 'borderRadius': '0'}}><small className="white">Next question</small></button>
                             </div>
                         </div>
                     </div>
