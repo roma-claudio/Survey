@@ -6,7 +6,7 @@
 
 ## How to use it
 
-Edit the username and password of your MySQL database in backend/server.js
+Insert the username and password of your MySQL database in backend/server.js
 
 Start the backend
 
