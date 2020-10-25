@@ -1,7 +1,8 @@
 ## Dependencies
 
-#Node.js
-#MySQL database
+-Node.js
+
+-MySQL database
 
 ## How to use it
 
